@@ -10,13 +10,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  # Пока репозитории лежат рядом на диске, холст подключается по пути.
+  # Холст берётся с GitHub. Для работы с локальной копией холста создайте
+  # рядом с pubspec.yaml файл pubspec_overrides.yaml (в git его класть не нужно):
+  #   dependency_overrides:
+  #     flutter_pixel_canvas:
+  #       path: ../flutter_pixel_canvas
   flutter_pixel_canvas:
-    path: ../flutter_pixel_canvas
-  # Когда холст будет на GitHub, замените path на git:
-  # flutter_pixel_canvas:
-  #   git:
-  #     url: https://github.com/<ваш-аккаунт>/flutter_pixel_canvas.git
+    git:
+      url: https://github.com/slyvkanychserhii/flutter_pixel_canvas.git
 
 dev_dependencies:
   flutter_test:

@@ -15,6 +15,12 @@ dependencies:
   flutter_pixel_ui:
     path: ../
 
+# Пример всегда берёт холст из соседней папки, даже когда сам flutter_pixel_ui
+# подключает его с GitHub (иначе pub видит два разных источника одного пакета).
+dependency_overrides:
+  flutter_pixel_canvas:
+    path: ../../flutter_pixel_canvas
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

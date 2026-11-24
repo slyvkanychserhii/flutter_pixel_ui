@@ -18,3 +18,4 @@ example/build/
 example/pubspec.lock
 example/.flutter-plugins*
 example/.metadata
+pubspec_overrides.yaml
