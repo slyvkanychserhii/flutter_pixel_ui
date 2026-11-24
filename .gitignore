@@ -1,0 +1,20 @@
+.dart_tool/
+.packages
+build/
+pubspec.lock
+.idea/
+*.iml
+.DS_Store
+__pycache__/
+# платформенные папки примера создаёт flutter create
+example/android/
+example/ios/
+example/macos/
+example/linux/
+example/windows/
+example/web/
+example/.dart_tool/
+example/build/
+example/pubspec.lock
+example/.flutter-plugins*
+example/.metadata

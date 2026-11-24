@@ -1,0 +1,24 @@
+name: flutter_pixel_ui
+description: Пиксельные элементы интерфейса для Flutter на основе flutter_pixel_canvas - кнопки, счётчики, поля ввода, выбор времени и другие.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+  flutter: ">=3.27.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Пока репозитории лежат рядом на диске, холст подключается по пути.
+  flutter_pixel_canvas:
+    path: ../flutter_pixel_canvas
+  # Когда холст будет на GitHub, замените path на git:
+  # flutter_pixel_canvas:
+  #   git:
+  #     url: https://github.com/<ваш-аккаунт>/flutter_pixel_canvas.git
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
